@@ -12,7 +12,7 @@ local_wikis = {'2010':'List_of_MPs_elected_in_the_United_Kingdom_general_electio
 			   '1979':'MPs_elected_in_the_United_Kingdom_general_election,_1979.html'}
 
 years = local_wikis.keys()
-
+#
 ################## create soups - use the html5lib parser to avoid errors and missing data
 def Soup(year):
 	return BeautifulSoup(open(local_wikis[year],'r'), "html5lib")
